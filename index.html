@@ -372,14 +372,14 @@
     <!-- Main section ends -->
 
     <!-- Footer section starts -->
-    <footer class="footer bg-[#0B0D17] text-neutral-content p-10">
+    <footer class=" bg-[#0B0D17] text-neutral-content md:p-10 p-5">
         <div class="w-[80%] mx-auto md:flex gap-5 justify-between">
             <div class="space-y-2">
                 <div class="flex gap-2">
                     <div><a href="">Download Now</a></div>
                     <div><a href="">License</a></div>
                 </div>
-                <div class="flex md:gap-2 gap-2">
+                <div class="grid grid-cols-3 md:grid-cols-6">
                     <a href="">About</a>
                     <a href="">Features</a>
                     <a href="">Pricing</a>
@@ -387,7 +387,9 @@
                     <a href="">Help</a>
                     <a href="">Privacy Policy</a>
                 </div>
-                <p class="text-xs">© 2020 bike. All rights reserved</p>
+                <div class="hidden md:block">
+                    <p class="text-xs mt-4">© 2020 bike. All rights reserved</p>
+                </div>
             </div>
 
             <div>
@@ -398,8 +400,11 @@
                 </div>
 
             </div>
-        </div>
 
+        </div>
+        <div class="md:hidden">
+            <p class="text-xs text-center mt-5">© 2020 bike. All rights reserved</p>
+        </div>
     </footer>
     <!-- Footer section ends -->
 </body>
